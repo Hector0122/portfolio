@@ -331,7 +331,6 @@ section { padding: 72px 0; }
 
 .section-head p {
   color: var(--text-muted);
-  max-width: 560px;
   margin: 0;
 }
 
@@ -488,11 +487,35 @@ section { padding: 72px 0; }
 .proj > summary:hover { color: var(--accent); }
 .proj > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
+/* Smooth open/close without JS: force the content to stay rendered
+   (override the browser's default display:none on closed <details>
+   content) and animate its row height via the grid-template-rows
+   0fr -> 1fr trick, clipping with overflow:hidden on the inner
+   wrapper. Native <details>/<summary> still drives the open/close
+   state and keyboard/no-JS behavior — only the visual reveal changes. */
 .proj__body {
-  padding: 0 20px 24px;
-  animation: proj-reveal 0.35s ease both;
+  display: grid;
+  grid-template-rows: 0fr;
+  min-height: 0; /* without this, a 0fr track can still size itself off
+    the content's min-content instead of truly reaching 0, causing a
+    visible jump at the start/end of the transition instead of smooth
+    motion the whole way */
+  transition: grid-template-rows 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
-@keyframes proj-reveal { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+.proj[open] > .proj__body { grid-template-rows: 1fr; }
+
+.proj__body-inner {
+  overflow: hidden;
+  padding: 0 20px 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.proj[open] > .proj__body .proj__body-inner {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.08s; /* trails the height growth slightly
+    so the reveal reads as fade+grow instead of the content popping in
+    ahead of the box that's supposed to contain it */
+}
 
 .proj__body p { color: var(--text-muted); margin: 0 0 16px; }
 .proj__body ul { margin: 0 0 16px; padding-left: 20px; color: var(--text-muted); }
@@ -532,14 +555,28 @@ figcaption {
 .len-110 { --len: 110; }
 .len-150 { --len: 150; }
 .len-170 { --len: 170; }
+.len-300 { --len: 300; } /* generous overestimate for any diagram line — dasharray only needs to be >= the path length */
 
 .proj-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 14px;
+  align-items: start; /* without this, Grid stretches every card in a row to
+    match the tallest one — opening one card made its row-siblings grow into
+    tall empty boxes too, which read as "they all opened" */
 }
 .proj-grid .proj > summary { font-size: 0.85rem; padding: 15px 18px; }
-.proj-grid .proj__body { padding: 0 18px 18px; }
+.proj-grid .proj__body-inner { padding: 0 18px 18px; }
+
+/* Takeover layout: while one compact card is open, it spans the full grid
+   width and its siblings hide — instead of one card growing awkwardly next
+   to 3 still-small ones. This is purely visual now: exclusivity itself
+   (only one project open at a time, site-wide) is guaranteed by the shared
+   `name="proyectos"` attribute on every .proj <details> — a native HTML
+   accordion group, no JS. This :has() rule just gives the (necessarily
+   sole) open card its full-width layout within this grid. */
+.proj-grid:has(.proj[open]) .proj:not([open]) { display: none; }
+.proj-grid:has(.proj[open]) .proj[open] { grid-column: 1 / -1; }
 .proj-grid .proj__body p { font-size: 0.88rem; }
 
 .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
@@ -579,7 +616,7 @@ figcaption {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.8rem;
 }
-.footer__contact a { text-decoration: none; color: var(--text-muted); }
+.footer__contact a { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text-muted); }
 .footer__contact a:hover { color: var(--accent); }
 .footer__contact noscript { color: var(--text-muted); }
 

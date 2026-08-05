@@ -1,9 +1,11 @@
 # Portafolio — Héctor Páramo Velásquez
 
-Sitio estático (HTML/CSS/JS puro, sin frameworks ni build step) con dos páginas:
+Sitio estático (HTML/CSS/JS puro, sin frameworks ni build step) con dos páginas, cada una disponible en español (raíz) e inglés (`en/`):
 
-- `index.html` — portafolio de evidencia (sobre mí, stack, proyectos). Diseño "Blueprint": tipografía Archivo Black + IBM Plex Mono (self-hosted en `fonts/`, sin peticiones a CDNs externos), tema navy oscuro / crema claro, sin bordes redondeados.
-- `cv.html` — CV imprimible/descargable a PDF (botón "Imprimir" usa el diálogo de impresión del navegador → "Guardar como PDF"). Mantiene su estilo propio, distinto del sitio — tiene el historial completo de experiencia y educación que ya no está duplicado en `index.html`.
+- `index.html` / `en/index.html` — portafolio de evidencia (sobre mí, stack, proyectos). Diseño "Blueprint": tipografía Archivo Black + IBM Plex Mono (self-hosted en `fonts/`, sin peticiones a CDNs externos), tema navy oscuro / crema claro, sin bordes redondeados.
+- `cv.html` / `en/cv.html` — CV imprimible/descargable a PDF (botón "Imprimir" usa el diálogo de impresión del navegador → "Guardar como PDF"). Mantiene su estilo propio, distinto del sitio — tiene el historial completo de experiencia y educación que ya no está duplicado en `index.html`.
+
+**⚠️ Mantenimiento bilingüe:** no hay build step ni una sola fuente de verdad por texto — español e inglés son archivos HTML separados y completos. Cualquier edición de contenido (arreglar un typo, actualizar el stack, agregar un proyecto) hay que replicarla a mano en ambos árboles (`index.html`↔`en/index.html`, `cv.html`↔`en/cv.html`, `404.html`↔`en/404.html`), o las dos versiones se desincronizan silenciosamente. Los 2 diagramas de arquitectura (G-Nex, Velody) también están duplicados por idioma (4 SVGs en total) — si la arquitectura real cambia, hay que actualizar las 4 copias.
 
 ## Pendientes antes de publicar
 
@@ -59,8 +61,9 @@ Portafolio-Hector/
 ├── script.js           Menú móvil + toggle de tema + año + contacto ofuscado
 ├── fonts/              Archivo Black + IBM Plex Mono (self-hosted, .woff2)
 ├── logo_*.svg           Logos placeholder por proyecto (swap de archivo)
-├── og-image.svg         Imagen para previews al compartir el link
-├── robots.txt / sitemap.xml   SEO/crawlability
-├── vercel.json          Headers de seguridad (CSP, X-Frame-Options, etc.)
+├── og-image.svg         Imagen para previews al compartir el link (ES)
+├── en/                  Versión en inglés (index.html, cv.html, 404.html, og-image.svg)
+├── robots.txt / sitemap.xml   SEO/crawlability (incluye URLs /en/)
+├── vercel.json          Headers de seguridad (CSP, X-Frame-Options, etc.) + rewrite de 404 para /en/
 └── README.md            Este archivo
 ```

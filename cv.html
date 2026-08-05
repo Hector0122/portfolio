@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV — Héctor Páramo Velásquez</title>
+<link rel="alternate" hreflang="es" href="https://portfolio-delta-ruddy-33.vercel.app/cv.html">
+<link rel="alternate" hreflang="en" href="https://portfolio-delta-ruddy-33.vercel.app/en/cv.html">
+<link rel="alternate" hreflang="x-default" href="https://portfolio-delta-ruddy-33.vercel.app/cv.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
 <link rel="stylesheet" href="cv.css">
 </head>
@@ -11,6 +14,7 @@
 
 <div class="toolbar">
   <a href="index.html">← Portafolio</a>
+  <a href="/en/cv.html">EN</a>
   <button class="primary" id="print-btn">🖨️ Descargar / Imprimir PDF</button>
 </div>
 
@@ -54,6 +58,7 @@
         <li>Integración y consumo de APIs REST para comunicación con servicios backend</li>
         <li>Participación en desarrollo backend con Node.js y Sequelize; gestión de MySQL con consultas complejas</li>
         <li>Mantenimiento, mejora y optimización de sistemas en producción</li>
+        <li>Desarrollo de G-Nex/Anexo 24: sistema de gestión aduanera multi-tenant (React, NestJS, Express, MySQL) con integración SOAP a VUCEM</li>
       </ul>
     </div>
 
@@ -61,8 +66,9 @@
       <div class="entry__head"><h3>Software Developer</h3><span class="entry__period">2021 — 2022</span></div>
       <p class="entry__org">IDG (SITT)</p>
       <ul>
-        <li>Desarrollo de funcionalidad de botón de pánico integrado con el sistema C4 mediante Web Services</li>
-        <li>Implementación de endpoints para consulta y envío de información, e integración móvil-backend</li>
+        <li>Desarrollo de funcionalidad de botón de pánico integrado con el sistema C4 mediante Web Services SOAP (backend en C#)</li>
+        <li>Conversión JSON ↔ XML para comunicarse con los servicios SOAP de C4</li>
+        <li>Implementación de endpoints para consulta y envío de información, e integración móvil-backend, con Firebase como base de datos</li>
       </ul>
     </div>
 
@@ -78,13 +84,6 @@
 
   <section>
     <h2 class="cv-section">Proyectos personales</h2>
-
-    <div class="proj-line">
-      <b>🛃 G-Nex / Anexo 24 — Sistema de gestión aduanera multi-tenant</b>
-      Arquitectura de 3 servicios (React, NestJS, Express), multi-tenancy por JWT, procesamiento
-      en background con worker threads, integración SOAP con VUCEM.
-      <div class="stack">React · Redux Toolkit · NestJS · Express · MySQL · Sequelize</div>
-    </div>
 
     <div class="proj-line">
       <b>💰 Varo — App de finanzas personales</b>
@@ -125,7 +124,7 @@
       <dt>Backend</dt><dd>Node.js, Express, NestJS, C#, APIs REST, CRUD, arquitectura MVC</dd>
       <dt>Móvil &amp; Desktop</dt><dd>React Native (incl. New Architecture), widgets nativos Android, Electron</dd>
       <dt>Bases de datos</dt><dd>MySQL, PostgreSQL, MongoDB, Prisma, Sequelize, diseño de bases de datos</dd>
-      <dt>Cloud / IA</dt><dd>AWS S3, Cloudflare R2, Firebase, Groq (LLM/Vision), Gemini, TensorFlow, PyTorch</dd>
+      <dt>Cloud / IA</dt><dd>AWS S3, Cloudflare R2, Firebase, Groq (LLM/Vision), Gemini, TensorFlow, PyTorch, Ollama, Demucs</dd>
       <dt>DevOps / Testing</dt><dd>Docker, GitLab CI, Pulumi, Jest, Vitest, React Testing Library</dd>
       <dt>Videojuegos</dt><dd>Unity, C#, Universal Render Pipeline, desarrollo colaborativo</dd>
       <dt>Herramientas</dt><dd>Git, GitHub, Postman, VS Code, pnpm</dd>

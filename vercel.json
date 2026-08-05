@@ -25,5 +25,8 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/en/:path*", "destination": "/en/404.html" }
   ]
 }

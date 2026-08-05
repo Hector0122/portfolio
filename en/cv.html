@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Héctor Páramo Velásquez</title>
+<link rel="alternate" hreflang="es" href="https://portfolio-delta-ruddy-33.vercel.app/cv.html">
+<link rel="alternate" hreflang="en" href="https://portfolio-delta-ruddy-33.vercel.app/en/cv.html">
+<link rel="alternate" hreflang="x-default" href="https://portfolio-delta-ruddy-33.vercel.app/cv.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
+<link rel="stylesheet" href="../cv.css">
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="index.html">← Portfolio</a>
+  <a href="/cv.html">ES</a>
+  <button class="primary" id="print-btn">🖨️ Download / Print PDF</button>
+</div>
+
+<main class="page">
+
+  <div class="cv-header">
+    <h1>Héctor Páramo Velásquez</h1>
+    <p class="role">Full-Stack Developer (Web, Mobile &amp; Games)</p>
+    <p class="contact-line">
+      Tijuana, Mexico · <span id="cv-phone"></span> · <a href="#" id="cv-email-link"></a>
+      <noscript>(enable JavaScript to see my phone/email, or reach me via GitHub/LinkedIn)</noscript>
+      · <a href="index.html">Portfolio</a>
+      · <a href="https://github.com/Hector0122" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <!-- TODO: add your real LinkedIn URL -->
+      · <a href="#">LinkedIn</a>
+    </p>
+  </div>
+  <hr>
+
+  <section>
+    <h2 class="cv-section">Professional profile</h2>
+    <p class="cv-summary">
+      Full-stack developer with experience in production enterprise web applications
+      (React.js, Ant Design, Node.js, MySQL) and a portfolio of personal projects spanning
+      multi-service architectures, native mobile apps, AI integrations and cloud storage,
+      desktop applications, and game development in Unity/C#. My earlier background in
+      Industrial Engineering brings a perspective focused on process optimization and
+      problem-solving in production environments.
+    </p>
+  </section>
+  <hr>
+
+  <section>
+    <h2 class="cv-section">Professional experience</h2>
+
+    <div class="entry">
+      <div class="entry__head"><h3>Software Developer</h3><span class="entry__period">Jul 2022 — Present</span></div>
+      <p class="entry__org">G Global</p>
+      <ul>
+        <li>Development of enterprise web applications with React.js and Ant Design</li>
+        <li>Integration and consumption of REST APIs for backend service communication</li>
+        <li>Backend development with Node.js and Sequelize; MySQL management with complex queries</li>
+        <li>Maintenance, improvement, and optimization of production systems</li>
+        <li>Development of G-Nex/Anexo 24: multi-tenant customs management system (React, NestJS, Express, MySQL) with SOAP integration to VUCEM</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head"><h3>Software Developer</h3><span class="entry__period">2021 — 2022</span></div>
+      <p class="entry__org">IDG (SITT)</p>
+      <ul>
+        <li>Development of a panic-button feature integrated with the C4 system via SOAP Web Services (C# backend)</li>
+        <li>JSON ↔ XML conversion to communicate with C4's SOAP services</li>
+        <li>Implementation of endpoints for data query/submission and mobile-backend integration, with Firebase as the data store</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head"><h3>Software Developer</h3><span class="entry__period">2021</span></div>
+      <p class="entry__org">Ark Public</p>
+      <ul>
+        <li>Development of systems for the restaurant industry: C# backend and React.js interfaces</li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+
+  <section>
+    <h2 class="cv-section">Personal projects</h2>
+
+    <div class="proj-line">
+      <b>💰 Varo — Personal finance app</b>
+      Savings-goal forecasting engine, recurring transactions, AI receipt scanning (Groq Vision), native Android widget.
+      <div class="stack">React Native · NestJS · Prisma · PostgreSQL · Groq API</div>
+    </div>
+
+    <div class="proj-line">
+      <b>📸 Vaulta — Private-vault-style photo management</b>
+      Facial recognition (face-api + TensorFlow), duplicate detection via perceptual hashing, ZIP export, PIN + biometric vault.
+      <div class="stack">React Native · NestJS · PostgreSQL · Cloudflare R2/S3 · Firebase</div>
+    </div>
+
+    <div class="proj-line">
+      <b>🎵 Velody — AI audio stem separation</b>
+      Desktop app with a 3-process architecture (React/Node/Python via IPC), separation with Demucs (PyTorch), BPM/key detection.
+      <div class="stack">Electron · React · Python · PyTorch · Demucs</div>
+    </div>
+
+    <div class="proj-line">
+      <b>📚 Vellum — AI-powered EPUB reader</b>
+      Offline-first architecture, AI-generated summaries and recommendations (Groq/Gemini), native reader built with Readium.
+      <div class="stack">React Native · Express · Prisma · PostgreSQL · Groq · Gemini</div>
+    </div>
+
+    <div class="proj-line">
+      <b>🎮 Viva2026 — 2D action game (Unity, in development)</b>
+      Collaborative project inspired by Katana Zero/Hotline Miami/Dead Cells. Level and entities generated 100% procedurally at runtime; extensible mask-based ability system.
+      <div class="stack">Unity 6 · C# · URP · Android</div>
+    </div>
+  </section>
+  <hr>
+
+  <section>
+    <h2 class="cv-section">Skills</h2>
+    <dl class="skills-grid">
+      <dt>Frontend</dt><dd>React (Hooks, Context API), Redux Toolkit, Ant Design, Tailwind CSS, Vite, responsive design</dd>
+      <dt>Backend</dt><dd>Node.js, Express, NestJS, C#, REST APIs, CRUD, MVC architecture</dd>
+      <dt>Mobile &amp; Desktop</dt><dd>React Native (incl. New Architecture), native Android widgets, Electron</dd>
+      <dt>Databases</dt><dd>MySQL, PostgreSQL, MongoDB, Prisma, Sequelize, database design</dd>
+      <dt>Cloud / AI</dt><dd>AWS S3, Cloudflare R2, Firebase, Groq (LLM/Vision), Gemini, TensorFlow, PyTorch, Ollama, Demucs</dd>
+      <dt>DevOps / Testing</dt><dd>Docker, GitLab CI, Pulumi, Jest, Vitest, React Testing Library</dd>
+      <dt>Game dev</dt><dd>Unity, C#, Universal Render Pipeline, collaborative development</dd>
+      <dt>Tools</dt><dd>Git, GitHub, Postman, VS Code, pnpm</dd>
+    </dl>
+  </section>
+  <hr>
+
+  <div class="two-col">
+    <section>
+      <h2 class="cv-section">Education</h2>
+      <div class="entry">
+        <div class="entry__head"><h3>Software Development Engineering</h3><span class="entry__period">2019 — 2023</span></div>
+        <p class="entry__org">Cesun Universidad · Certificate obtained</p>
+      </div>
+      <div class="entry">
+        <div class="entry__head"><h3>Industrial Engineering</h3><span class="entry__period">2012 — 2016</span></div>
+        <p class="entry__org">Universidad Tecnológica de Tijuana · Degree completed</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="cv-section">Additional experience</h2>
+      <div class="entry">
+        <div class="entry__head"><h3>Molding Engineer</h3></div>
+        <p class="entry__org">Smiths Medical · Parker Hannifin de México</p>
+        <ul>
+          <li>Manufacturing process optimization and quality control</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>
