@@ -592,6 +592,9 @@ figcaption {
   .nav__links { display: none; }
   .nav__burger { display: inline-flex; align-items: center; justify-content: center; }
 
+  .nav__actions { gap: 6px; }
+  .nav__icon-link, .theme-toggle, .nav__burger { width: 32px; height: 32px; }
+
   .nav--open .nav__links {
     display: flex;
     position: absolute;
