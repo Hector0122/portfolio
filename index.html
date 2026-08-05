@@ -33,9 +33,7 @@
     <ul class="nav__links">
       <li><a href="#sobre-mi">Sobre mí</a></li>
       <li><a href="#stack">Stack</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#educacion">Educación</a></li>
       <li><a href="cv.html" class="nav__cta">Ver CV</a></li>
     </ul>
     <div class="nav__actions">
@@ -46,15 +44,17 @@
 </nav>
 
 <header class="hero" id="inicio">
+  <div class="hero__glow" aria-hidden="true"></div>
   <div class="container">
     <span class="hero__eyebrow">Portafolio de evidencia</span>
     <h1>Héctor Páramo Velásquez</h1>
+    <div class="hero__rule" aria-hidden="true"></div>
     <p class="hero__subtitle">
       Desarrollador Full-Stack. Construyo sistemas completos end-to-end — APIs backend,
       apps web y móviles, integraciones con IA — y también desarrollo videojuegos en Unity.
     </p>
     <div class="hero__actions">
-      <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+      <a href="#proyectos" class="btn btn--primary">Ver proyectos →</a>
       <a href="cv.html" class="btn btn--ghost">Descargar CV</a>
     </div>
     <p class="hero__meta">📍 Tijuana, México · 📧 <span id="hero-email"></span><noscript> activa JavaScript para verlo, o contáctame por GitHub/LinkedIn más abajo</noscript></p>
@@ -79,12 +79,12 @@
         resolución de problemas que aplico al diseño de sistemas de software.
       </p>
     </div>
-    <dl class="about__facts">
-      <div class="fact"><dt>Rol actual</dt><dd>Software Developer @ G Global</dd></div>
-      <div class="fact"><dt>Desde</dt><dd>Jul 2022</dd></div>
-      <div class="fact"><dt>Ubicación</dt><dd>Tijuana, México</dd></div>
-      <div class="fact"><dt>Formación</dt><dd>Ing. Desarrollo de Software</dd></div>
-      <div class="fact"><dt>Antes de software</dt><dd>Ing. Industrial</dd></div>
+    <dl class="title-block title-block--vertical">
+      <div><dt>Rol actual</dt><dd>Software Developer @ G Global</dd></div>
+      <div><dt>Desde</dt><dd>Jul 2022</dd></div>
+      <div><dt>Ubicación</dt><dd>Tijuana, México</dd></div>
+      <div><dt>Formación</dt><dd>Ing. Desarrollo de Software</dd></div>
+      <div><dt>Antes de software</dt><dd>Ing. Industrial</dd></div>
     </dl>
   </div>
 </section>
@@ -92,279 +92,245 @@
 <section id="stack" class="section-alt">
   <div class="container">
     <div class="section-head">
-      <h2>Stack técnico</h2>
+      <h2><span class="tag">Dwg 01</span> Lista de materiales — Stack</h2>
       <p>Tecnologías usadas tanto en el trabajo diario como en mis proyectos personales.</p>
     </div>
-    <div class="stack-grid">
-      <div class="stack-card">
-        <h3>Lenguajes</h3>
-        <div class="badges">
-          <span class="badge">TypeScript</span><span class="badge">JavaScript</span>
-          <span class="badge">Python</span><span class="badge">C# (Unity)</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>Backend</h3>
-        <div class="badges">
-          <span class="badge">Node.js</span><span class="badge">Express</span>
-          <span class="badge">NestJS</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>Frontend Web</h3>
-        <div class="badges">
-          <span class="badge">React</span><span class="badge">Vite</span>
-          <span class="badge">Redux Toolkit</span><span class="badge">Ant Design</span>
-          <span class="badge">Tailwind CSS</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>Móvil &amp; Desktop</h3>
-        <div class="badges">
-          <span class="badge">React Native</span><span class="badge">Widgets nativos Android</span>
-          <span class="badge">Electron</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>Bases de datos</h3>
-        <div class="badges">
-          <span class="badge">MySQL</span><span class="badge">PostgreSQL</span>
-          <span class="badge">MongoDB</span><span class="badge">Prisma</span>
-          <span class="badge">Sequelize</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>Cloud &amp; Storage</h3>
-        <div class="badges">
-          <span class="badge">AWS S3</span><span class="badge">Cloudflare R2</span>
-          <span class="badge">Railway</span><span class="badge">Firebase</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>IA / ML</h3>
-        <div class="badges">
-          <span class="badge">Groq (LLM y Vision)</span><span class="badge">Gemini</span>
-          <span class="badge">TensorFlow</span><span class="badge">PyTorch / Demucs</span>
-          <span class="badge">face-api</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>DevOps &amp; Testing</h3>
-        <div class="badges">
-          <span class="badge">Docker</span><span class="badge">GitLab CI</span>
-          <span class="badge">Pulumi</span><span class="badge">Jest / Vitest</span>
-          <span class="badge">ESLint / Biome</span>
-        </div>
-      </div>
-      <div class="stack-card">
-        <h3>Videojuegos</h3>
-        <div class="badges">
-          <span class="badge">Unity</span><span class="badge">C#</span>
-          <span class="badge">URP</span><span class="badge">Desarrollo colaborativo</span>
-        </div>
-      </div>
-    </div>
+    <table class="bom-table">
+      <thead>
+        <tr><th>Ítem</th><th>Componente</th><th>Categoría</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>01</td><td>TypeScript · JavaScript · Python · C# (Unity)</td><td>Lenguajes</td></tr>
+        <tr><td>02</td><td>Node.js · Express · NestJS</td><td>Backend</td></tr>
+        <tr><td>03</td><td>React · Vite · Redux Toolkit · Ant Design · Tailwind CSS</td><td>Frontend web</td></tr>
+        <tr><td>04</td><td>React Native · Widgets nativos Android · Electron</td><td>Móvil &amp; desktop</td></tr>
+        <tr><td>05</td><td>MySQL · PostgreSQL · MongoDB · Prisma · Sequelize</td><td>Bases de datos</td></tr>
+        <tr><td>06</td><td>AWS S3 · Cloudflare R2 · Railway · Firebase</td><td>Cloud &amp; storage</td></tr>
+        <tr><td>07</td><td>Groq (LLM y Vision) · Gemini · TensorFlow · PyTorch / Demucs · face-api</td><td>IA / ML</td></tr>
+        <tr><td>08</td><td>Docker · GitLab CI · Pulumi · Jest / Vitest · ESLint / Biome</td><td>DevOps &amp; testing</td></tr>
+        <tr><td>09</td><td>Unity · C# · URP · desarrollo colaborativo</td><td>Videojuegos</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
-<section id="experiencia">
+<section id="proyectos">
   <div class="container">
     <div class="section-head">
-      <h2>Experiencia profesional</h2>
-      <p>Trayectoria en desarrollo de software, con un antecedente en ingeniería industrial.</p>
+      <h2><span class="tag">Dwg 02</span> Proyectos</h2>
+      <p>Evidencia de trabajo: sistemas empresariales, apps móviles, integraciones con IA y un videojuego en desarrollo. Haz clic en cada uno para ver el detalle.</p>
     </div>
-    <div class="timeline">
-      <div class="timeline__item">
-        <span class="timeline__period">Jul 2022 — Actualidad</span>
-        <h3>G Global · Software Developer</h3>
-        <ul>
-          <li>Desarrollo de aplicaciones web empresariales con React.js y Ant Design</li>
-          <li>Construcción de interfaces modernas, responsivas y orientadas a UX</li>
-          <li>Integración y consumo de APIs REST con servicios backend</li>
-          <li>Participación en desarrollo backend con Node.js y Sequelize</li>
-          <li>Gestión y consulta de bases de datos MySQL, incluyendo consultas complejas</li>
-          <li>Mantenimiento, mejora y optimización de sistemas en producción</li>
-        </ul>
-      </div>
-      <div class="timeline__item">
-        <span class="timeline__period">2021 — 2022</span>
-        <h3>IDG (SITT) · Software Developer</h3>
-        <ul>
-          <li>Desarrollo de la funcionalidad de botón de pánico integrado con el sistema C4 mediante Web Services</li>
-          <li>Implementación de endpoints para consulta y envío de información</li>
-          <li>Integración de servicios entre aplicaciones móviles y backend</li>
-        </ul>
-      </div>
-      <div class="timeline__item">
-        <span class="timeline__period">2021</span>
-        <h3>Ark Public · Software Developer</h3>
-        <ul>
-          <li>Desarrollo de sistemas para el sector restaurantero</li>
-          <li>Implementación de lógica backend utilizando C#</li>
-          <li>Construcción de interfaces básicas con React.js</li>
-        </ul>
-      </div>
-      <div class="timeline__item timeline--muted">
-        <span class="timeline__period">2016 — 2021</span>
-        <h3>Ingeniero de Moldeo · Smiths Medical / Parker Hannifin</h3>
-        <ul>
-          <li>Optimización de procesos de manufactura y control de calidad</li>
-          <li>Resolución de problemas en entornos productivos exigentes</li>
-        </ul>
-      </div>
+
+    <div class="proj-group">
+      <p class="proj-group__label">Profesionales</p>
+
+      <details class="proj" open>
+        <summary>
+          <img class="proj__logo" src="logo_gnex.svg" alt="">
+          <span class="proj__title">🛃 G-Nex / Anexo 24</span>
+          <span class="proj__chevron">▶</span>
+        </summary>
+        <div class="proj__body">
+          <p>Sistema de gestión aduanera multi-tenant para operaciones de comercio exterior en México (pedimentos, facturas, manifestaciones de valor, integración con VUCEM), desarrollado como parte de mi trabajo en G Global. Una base MySQL por empresa cliente, resuelta dinámicamente a partir del <code>tenant_id</code> incluido en el JWT — sin bases compartidas ni rutas hardcodeadas.</p>
+          <figure>
+            <svg viewBox="0 0 660 230" role="img" aria-label="Diagrama: el cliente inicia sesión en NestJS, que emite un JWT con el tenant_id; Express usa ese tenant_id para resolver a cuál de las tres bases MySQL de cliente debe consultar.">
+              <defs>
+                <marker id="gnex-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+                </marker>
+              </defs>
+              <rect class="flow-box" x="10" y="90" width="100" height="50"/>
+              <text class="flow-text" x="60" y="119" text-anchor="middle">Cliente</text>
+
+              <rect class="flow-box" x="160" y="90" width="140" height="50"/>
+              <text class="flow-text" x="230" y="119" text-anchor="middle">NestJS · Auth</text>
+
+              <line class="flow-line draw len-150" x1="110" y1="115" x2="155" y2="115" marker-end="url(#gnex-arrow)"/>
+              <text class="flow-label" x="132" y="105" text-anchor="middle">login</text>
+
+              <rect class="flow-box" x="350" y="90" width="150" height="50"/>
+              <text class="flow-text" x="425" y="119" text-anchor="middle">Express · API core</text>
+
+              <line class="flow-line--hinge draw len-150" x1="300" y1="115" x2="345" y2="115" marker-end="url(#gnex-arrow)"/>
+              <text class="flow-label--hinge" x="322" y="105" text-anchor="middle">JWT{tenant_id}</text>
+
+              <rect class="flow-box" x="550" y="10" width="100" height="40"/>
+              <text class="flow-text flow-text--sm" x="600" y="35" text-anchor="middle">MySQL A</text>
+              <rect class="flow-box" x="550" y="95" width="100" height="40"/>
+              <text class="flow-text flow-text--sm" x="600" y="120" text-anchor="middle">MySQL B</text>
+              <rect class="flow-box" x="550" y="180" width="100" height="40"/>
+              <text class="flow-text flow-text--sm" x="600" y="205" text-anchor="middle">MySQL C</text>
+
+              <line class="flow-line draw len-110" x1="500" y1="105" x2="545" y2="30" marker-end="url(#gnex-arrow)"/>
+              <line class="flow-line draw len-70" x1="500" y1="115" x2="545" y2="115" marker-end="url(#gnex-arrow)"/>
+              <line class="flow-line draw len-110" x1="500" y1="125" x2="545" y2="200" marker-end="url(#gnex-arrow)"/>
+              <text class="flow-label" x="510" y="150" text-anchor="start">resuelve por tenant_id</text>
+            </svg>
+            <figcaption>El JWT que emite NestJS lleva el tenant_id; Express lo usa para decidir a cuál MySQL de empresa conectarse.</figcaption>
+          </figure>
+          <ul>
+            <li>Arquitectura de 3 servicios: React + TypeScript, NestJS (auth), Express + TypeScript (API core)</li>
+            <li>Procesamiento en background con worker threads para importaciones/reportes masivos</li>
+            <li>Integración SOAP con sistemas gubernamentales, generación de PDFs, almacenamiento en S3</li>
+          </ul>
+          <div class="badges">
+            <span class="badge">React</span><span class="badge">Redux Toolkit</span>
+            <span class="badge">NestJS</span><span class="badge">Express</span>
+            <span class="badge">MySQL</span><span class="badge">Sequelize</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="proj">
+        <summary>
+          <span class="proj__title">🚨 Plataforma de transporte — SITT</span>
+          <span class="proj__chevron">▶</span>
+        </summary>
+        <div class="proj__body">
+          <p>Plataforma para el sistema de transporte público, con integración a los centros de mando C4 de seguridad pública. Desarrollado durante mi tiempo en IDG (sin nombre de cliente por confidencialidad).</p>
+          <ul>
+            <li>Función de botón de pánico integrada con el sistema C4 mediante Web Services SOAP</li>
+            <li>Conversión JSON ↔ XML para comunicarse con los servicios SOAP de C4</li>
+            <li>Endpoints para consulta y envío de información en tiempo real</li>
+            <li>Integración de servicios entre aplicaciones móviles y backend</li>
+          </ul>
+          <div class="badges">
+            <span class="badge">C#</span><span class="badge">SOAP</span>
+            <span class="badge">Firebase</span><span class="badge">React</span>
+          </div>
+        </div>
+      </details>
     </div>
-  </div>
-</section>
 
-<section id="proyectos" class="section-alt">
-  <div class="container">
-    <div class="section-head">
-      <h2>Proyectos destacados</h2>
-      <p>Evidencia de trabajo: sistemas empresariales, apps móviles, integraciones con IA y un videojuego en desarrollo.</p>
-    </div>
-    <div class="project-grid">
+    <div class="proj-group">
+      <p class="proj-group__label">Personales</p>
 
-      <article class="project-card">
-        <h3 class="project-card__title">🛃 G-Nex / Anexo 24</h3>
-        <p>Sistema de gestión aduanera multi-tenant para operaciones de comercio exterior en México (pedimentos, facturas, manifestaciones de valor, integración con VUCEM).</p>
-        <ul>
-          <li>Arquitectura de 3 servicios: React + TypeScript, NestJS (auth), Express + TypeScript (API core)</li>
-          <li>Multi-tenancy real: una base de datos MySQL por empresa cliente, resuelta dinámicamente por JWT</li>
-          <li>Sistema de rutas y permisos dinámico generado desde roles, sin rutas hardcodeadas</li>
-          <li>Procesamiento en background con worker threads para importaciones/reportes masivos</li>
-          <li>Integración SOAP con sistemas gubernamentales, generación de PDFs, almacenamiento en S3</li>
-        </ul>
-        <div class="badges">
-          <span class="badge">React</span><span class="badge">Redux Toolkit</span>
-          <span class="badge">NestJS</span><span class="badge">Express</span>
-          <span class="badge">MySQL</span><span class="badge">Sequelize</span>
+      <details class="proj">
+        <summary>
+          <img class="proj__logo" src="logo_velody.svg" alt="">
+          <span class="proj__title">🎵 Velody</span>
+          <span class="proj__chevron">▶</span>
+        </summary>
+        <div class="proj__body">
+          <p>Aplicación de escritorio para separar canciones en stems (voz, batería, bajo, etc.) y practicar sobre ellas. Tres procesos independientes coordinados por IPC — la separación de audio ocurre fuera del proceso principal para no congelar la UI.</p>
+          <figure>
+            <svg viewBox="0 0 520 230" role="img" aria-label="Diagrama: React se comunica con el proceso principal de Node por IPC; Node genera un subproceso de Python que corre Demucs y devuelve los stems separados por stdout.">
+              <defs>
+                <marker id="velody-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M0,0 L10,5 L0,10 z" fill="currentColor" />
+                </marker>
+              </defs>
+              <rect class="flow-box" x="20" y="20" width="150" height="50"/>
+              <text class="flow-text" x="95" y="49" text-anchor="middle">React · UI</text>
+
+              <rect class="flow-box" x="20" y="160" width="150" height="50"/>
+              <text class="flow-text" x="95" y="189" text-anchor="middle">Node · Proceso principal</text>
+
+              <line class="flow-line draw len-100" x1="95" y1="70" x2="95" y2="155" marker-end="url(#velody-arrow)" marker-start="url(#velody-arrow)"/>
+              <text class="flow-label" x="105" y="115">IPC</text>
+
+              <rect class="flow-box" x="330" y="90" width="160" height="50"/>
+              <text class="flow-text" x="410" y="119" text-anchor="middle">Python · Demucs</text>
+
+              <line class="flow-line--hinge draw len-170" x1="170" y1="175" x2="325" y2="125" marker-end="url(#velody-arrow)"/>
+              <text class="flow-label--hinge" x="200" y="165">spawn · stdin</text>
+
+              <line class="flow-line draw len-170" x1="325" y1="140" x2="170" y2="190" marker-end="url(#velody-arrow)"/>
+              <text class="flow-label" x="220" y="215">stems .wav · stdout</text>
+            </svg>
+            <figcaption>Node lanza Python como subproceso para correr Demucs; la UI de React sigue respondiendo mientras se procesa el audio.</figcaption>
+          </figure>
+          <ul>
+            <li>Motor de audio propio sobre Web Audio API, con sincronización precisa entre stems</li>
+            <li>Separación de audio con Demucs (PyTorch) y detección de BPM/tonalidad con ML</li>
+            <li>Auto-configuración del entorno Python en el primer arranque</li>
+          </ul>
+          <div class="badges">
+            <span class="badge">Electron</span><span class="badge">React</span>
+            <span class="badge">Python</span><span class="badge">PyTorch</span>
+            <span class="badge">Demucs</span>
+          </div>
         </div>
-      </article>
+      </details>
 
-      <article class="project-card">
-        <h3 class="project-card__title">💰 Varo</h3>
-        <p>Aplicación móvil de finanzas personales con proyecciones inteligentes de metas de ahorro.</p>
-        <ul>
-          <li>Motor de forecasting que proyecta fecha de cumplimiento de metas según tasa de ahorro histórica</li>
-          <li>Transacciones recurrentes automatizadas con cron jobs</li>
-          <li>Escaneo de recibos con IA (Groq Vision) para captura automática de gastos</li>
-          <li>Widget nativo de Android renderizado con Skia</li>
-        </ul>
-        <div class="badges">
-          <span class="badge">React Native</span><span class="badge">NestJS</span>
-          <span class="badge">Prisma</span><span class="badge">PostgreSQL</span>
-          <span class="badge">Groq API</span>
-        </div>
-      </article>
+      <div class="proj-grid">
+        <details class="proj">
+          <summary>
+            <img class="proj__logo" src="logo_varo.svg" alt="">
+            <span class="proj__title">💰 Varo</span>
+            <span class="proj__chevron">▶</span>
+          </summary>
+          <div class="proj__body">
+            <p>Aplicación móvil de finanzas personales con proyecciones inteligentes de metas de ahorro, transacciones recurrentes automatizadas con cron jobs, y escaneo de recibos con IA (Groq Vision) para captura automática de gastos. Widget nativo de Android renderizado con Skia.</p>
+            <div class="badges">
+              <span class="badge">React Native</span><span class="badge">NestJS</span>
+              <span class="badge">Prisma</span><span class="badge">PostgreSQL</span>
+              <span class="badge">Groq API</span>
+            </div>
+          </div>
+        </details>
 
-      <article class="project-card">
-        <h3 class="project-card__title">📸 Vaulta</h3>
-        <p>App de almacenamiento y organización de fotos/video con funciones tipo "vault" privado.</p>
-        <ul>
-          <li>Reconocimiento facial y agrupación de personas (face-api + TensorFlow en proceso aislado)</li>
-          <li>Detección de duplicados mediante hashing perceptual</li>
-          <li>Exportación asíncrona a ZIP con notificaciones push vía Firebase</li>
-          <li>Vault protegido con PIN + biometría, papelera con soft-delete</li>
-        </ul>
-        <div class="badges">
-          <span class="badge">React Native</span><span class="badge">NestJS</span>
-          <span class="badge">PostgreSQL</span><span class="badge">Cloudflare R2/S3</span>
-          <span class="badge">Firebase</span><span class="badge">TensorFlow</span>
-        </div>
-      </article>
+        <details class="proj">
+          <summary>
+            <img class="proj__logo" src="logo_vaulta.svg" alt="">
+            <span class="proj__title">📸 Vaulta</span>
+            <span class="proj__chevron">▶</span>
+          </summary>
+          <div class="proj__body">
+            <p>App de almacenamiento y organización de fotos/video tipo "vault" privado: reconocimiento facial y agrupación de personas (face-api + TensorFlow en proceso aislado), detección de duplicados por hashing perceptual, exportación asíncrona a ZIP, vault protegido con PIN + biometría.</p>
+            <div class="badges">
+              <span class="badge">React Native</span><span class="badge">NestJS</span>
+              <span class="badge">PostgreSQL</span><span class="badge">Cloudflare R2/S3</span>
+              <span class="badge">Firebase</span><span class="badge">TensorFlow</span>
+            </div>
+          </div>
+        </details>
 
-      <article class="project-card">
-        <h3 class="project-card__title">🎵 Velody</h3>
-        <p>Aplicación de escritorio para separar canciones en stems (voz, batería, bajo, etc.) y practicar sobre ellas.</p>
-        <ul>
-          <li>Arquitectura de 3 procesos: React (UI) / Node (main) / Python (IA) comunicados vía IPC</li>
-          <li>Motor de audio propio sobre Web Audio API, con sincronización precisa entre stems</li>
-          <li>Separación de audio con Demucs (PyTorch) y detección de BPM/tonalidad con ML</li>
-          <li>Auto-configuración del entorno Python en el primer arranque</li>
-        </ul>
-        <div class="badges">
-          <span class="badge">Electron</span><span class="badge">React</span>
-          <span class="badge">Python</span><span class="badge">PyTorch</span>
-          <span class="badge">Demucs</span>
-        </div>
-      </article>
+        <details class="proj">
+          <summary>
+            <img class="proj__logo" src="logo_vellum.svg" alt="">
+            <span class="proj__title">📚 Vellum</span>
+            <span class="proj__chevron">▶</span>
+          </summary>
+          <div class="proj__body">
+            <p>App móvil de lectura de EPUBs con sincronización de progreso, notas y recomendaciones inteligentes. Arquitectura offline-first con cola de sincronización persistente y reintentos automáticos; resúmenes de capítulos generados por IA (Groq/Gemini).</p>
+            <div class="badges">
+              <span class="badge">React Native</span><span class="badge">Express</span>
+              <span class="badge">Prisma</span><span class="badge">PostgreSQL</span>
+              <span class="badge">Groq</span><span class="badge">Gemini</span>
+            </div>
+          </div>
+        </details>
 
-      <article class="project-card">
-        <h3 class="project-card__title">📚 Vellum</h3>
-        <p>App móvil de lectura de EPUBs con sincronización de progreso, notas y recomendaciones inteligentes.</p>
-        <ul>
-          <li>Arquitectura offline-first: cola de sincronización persistente con reintentos automáticos</li>
-          <li>Resúmenes de capítulos y recomendaciones de libros generados por IA (Groq/Gemini)</li>
-          <li>Lector nativo integrado con Readium toolkit</li>
-          <li>Deep linking para widget de Android</li>
-        </ul>
-        <div class="badges">
-          <span class="badge">React Native</span><span class="badge">Express</span>
-          <span class="badge">Prisma</span><span class="badge">PostgreSQL</span>
-          <span class="badge">Groq</span><span class="badge">Gemini</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3 class="project-card__title">🎮 Viva2026 <span class="project-card__tag">En desarrollo</span></h3>
-        <p>Videojuego 2D de acción sigilosa inspirado en Katana Zero, Hotline Miami y Dead Cells, desarrollado en equipo. El jugador infiltra niveles como asesino, combinando combate y máscaras con habilidades únicas.</p>
-        <ul>
-          <li>Nivel construido enteramente de forma procedural en runtime (sin prefabs): cámara, jugador, enemigos, plataformas y UI generados por código</li>
-          <li>Sistema de habilidades por máscaras extensible; Máscara Fantasma (invisibilidad + invulnerabilidad temporal) implementada para el MVP</li>
-          <li>Integración con el nuevo Input System de Unity</li>
-          <li>Pipeline de build a Android con firma automática vía keystore y builder de editor personalizado</li>
-        </ul>
-        <div class="badges">
-          <span class="badge">Unity 6</span><span class="badge">C#</span>
-          <span class="badge">URP</span><span class="badge">Android</span>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="educacion">
-  <div class="container">
-    <div class="section-head">
-      <h2>Educación</h2>
-    </div>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <h3>Ingeniería en Desarrollo de Software</h3>
-        <p>Cesun Universidad</p>
-        <p>2019 — 2023 · Certificado obtenido</p>
-      </div>
-      <div class="edu-card">
-        <h3>Ingeniería Industrial</h3>
-        <p>Universidad Tecnológica de Tijuana</p>
-        <p>2012 — 2016 · Titulado</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contacto" class="section-alt">
-  <div class="container">
-    <div class="contact">
-      <h2>¿Trabajamos juntos?</h2>
-      <p>Escríbeme si tienes un proyecto en mente o quieres conocer más sobre mi trabajo.</p>
-      <div class="contact__links">
-        <a href="#" id="email-contact-link">📧</a>
-        <a href="#" id="phone-contact-link">📱</a>
-        <noscript>Activa JavaScript para ver mi email y teléfono, o contáctame por GitHub/LinkedIn.</noscript>
-        <a href="https://github.com/Hector0122" id="github-link" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
-        <!-- TODO: reemplaza "#" con tu URL real de LinkedIn -->
-        <a href="#" id="linkedin-link">🔗 LinkedIn</a>
-        <a href="cv.html">📄 Ver CV</a>
+        <details class="proj">
+          <summary>
+            <img class="proj__logo" src="logo_viva2026.svg" alt="">
+            <span class="proj__title">🎮 Viva2026</span>
+            <span class="proj__chevron">▶</span>
+          </summary>
+          <div class="proj__body">
+            <p>Videojuego 2D de acción sigilosa en desarrollo, inspirado en Katana Zero, Hotline Miami y Dead Cells. Nivel construido enteramente de forma procedural en runtime (sin prefabs): cámara, jugador, enemigos, plataformas y UI generados por código. Sistema de habilidades por máscaras extensible.</p>
+            <div class="badges">
+              <span class="badge">Unity 6</span><span class="badge">C#</span>
+              <span class="badge">URP</span><span class="badge">Android</span>
+            </div>
+          </div>
+        </details>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>© <span id="year"></span> Héctor Páramo Velásquez · Tijuana, México</p>
+  <div class="container site-footer__inner">
+    <p class="site-footer__copy">© <span id="year"></span> Héctor Páramo Velásquez · Tijuana, México</p>
+    <nav class="footer__contact" aria-label="Contacto">
+      <a href="#" id="email-contact-link">📧</a>
+      <a href="https://github.com/Hector0122" id="github-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <!-- TODO: reemplaza "#" con tu URL real de LinkedIn -->
+      <a href="#" id="linkedin-link">LinkedIn</a>
+      <noscript>Activa JavaScript para ver mi email.</noscript>
+    </nav>
   </div>
 </footer>
 
