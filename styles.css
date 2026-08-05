@@ -72,8 +72,8 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background:
-    repeating-linear-gradient(0deg, transparent, transparent 39px, var(--rule) 39px, var(--rule) 40px),
-    repeating-linear-gradient(90deg, transparent, transparent 39px, var(--rule) 39px, var(--rule) 40px),
+    repeating-linear-gradient(0deg, transparent, transparent 39px, color-mix(in srgb, var(--rule) 40%, transparent) 39px, color-mix(in srgb, var(--rule) 40%, transparent) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, color-mix(in srgb, var(--rule) 40%, transparent) 39px, color-mix(in srgb, var(--rule) 40%, transparent) 40px),
     var(--bg);
   background-attachment: fixed;
   color: var(--text);
