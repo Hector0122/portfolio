@@ -179,6 +179,24 @@ a { color: inherit; }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
 .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+.nav__icon-link {
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  color: var(--text-muted);
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.nav__icon-link:hover { border-color: var(--accent); color: var(--accent); }
+.nav__icon-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 .nav__burger {
   display: none;
   background: none;
