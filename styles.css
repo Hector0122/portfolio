@@ -231,6 +231,8 @@ section { padding: 72px 0; }
 
 .section-head { margin-bottom: 36px; text-align: center; }
 
+.section-head--left { text-align: left; margin-bottom: 20px; }
+
 .section-head h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin: 0 0 8px;

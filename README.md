@@ -7,11 +7,14 @@ Sitio estático (HTML/CSS/JS puro, sin frameworks ni build step) con dos página
 
 ## Pendientes antes de publicar
 
-- [ ] Reemplazar los links `href="#"` de GitHub y LinkedIn en `index.html` (sección Contacto) y en `cv.html` (encabezado) con tus URLs reales.
+- [x] Reemplazar el link `href="#"` de GitHub en `index.html` (sección Contacto) y en `cv.html` (encabezado) — ahora apunta a `https://github.com/Hector0122`.
+- [ ] Reemplazar el link `href="#"` de LinkedIn en `index.html` (sección Contacto) y en `cv.html` (encabezado) con tu URL real.
 - [ ] Confirmar que el teléfono (664 125 9700) y la ubicación (Tijuana, México) siguen siendo correctos.
 - [ ] Si tienes capturas de pantalla o demos de G-Nex, Varo, Vaulta, Velody, Vellum o Viva2026, considera agregarlas como imágenes dentro de cada `project-card` en `index.html` — ahora mismo las tarjetas son solo texto.
 - [ ] Revisar si G-Nex/Anexo 24 es información confidencial de un cliente antes de publicar el sitio públicamente (no incluye nombres de clientes ni datos sensibles, pero confírmalo).
 - [ ] Poner nombre final al proyecto de Unity si ya lo tienes (actualmente aparece como "Viva2026").
+- [ ] Si cambias a un dominio propio, actualizar la URL de producción hardcodeada en `robots.txt`, `sitemap.xml`, y en las meta tags `og:url`/`og:image`/`twitter:image`/`canonical` de `index.html` (actualmente todas apuntan a `https://portfolio-delta-ruddy-33.vercel.app/`).
+- [ ] `og-image.svg` es un placeholder generado por IA con tu nombre/stack; reemplázalo por una captura o foto real cuando quieras (X/Twitter no rasteriza bien SVG en `og:image`, considera exportarlo a PNG si te importa esa plataforma).
 
 ## Cómo verlo localmente
 
