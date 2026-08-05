@@ -11,7 +11,7 @@
 
 <div class="toolbar">
   <a href="index.html">← Portafolio</a>
-  <button class="primary" onclick="window.print()">🖨️ Descargar / Imprimir PDF</button>
+  <button class="primary" id="print-btn">🖨️ Descargar / Imprimir PDF</button>
 </div>
 
 <main class="page">
@@ -22,15 +22,16 @@
     <p class="contact-line">
       Tijuana, México · 664 125 9700 · <a href="mailto:hpave954@gmail.com">hpave954@gmail.com</a>
       · <a href="index.html">Portafolio</a>
-      <!-- TODO: agrega tus URLs reales -->
-      · <a href="#">GitHub</a> · <a href="#">LinkedIn</a>
+      · <a href="https://github.com/Hector0122" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <!-- TODO: agrega tu URL real de LinkedIn -->
+      · <a href="#">LinkedIn</a>
     </p>
   </div>
   <hr>
 
   <section>
     <h2 class="cv-section">Perfil profesional</h2>
-    <p style="font-size:0.9rem; margin:0 0 4px;">
+    <p class="cv-summary">
       Desarrollador full-stack con experiencia en aplicaciones web empresariales en producción
       (React.js, Ant Design, Node.js, MySQL) y un portafolio de proyectos personales que abarca
       arquitecturas multi-servicio, apps móviles nativas, integraciones con IA y almacenamiento
@@ -158,5 +159,6 @@
 
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>

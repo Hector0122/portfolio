@@ -7,6 +7,12 @@ if (burger) {
   });
 }
 
+// Botón de imprimir/descargar CV (cv.html)
+const printBtn = document.getElementById("print-btn");
+if (printBtn) {
+  printBtn.addEventListener("click", () => window.print());
+}
+
 // Cierra el menú móvil al elegir un link
 document.querySelectorAll(".nav__links a").forEach((link) => {
   link.addEventListener("click", () => nav.classList.remove("nav--open"));

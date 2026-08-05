@@ -59,6 +59,8 @@ body {
 .cv-header .contact-line { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
 .cv-header .contact-line a { color: var(--text-muted); text-decoration: none; }
 
+.cv-summary { font-size: 0.9rem; margin: 0 0 4px; }
+
 hr { border: none; border-top: 1px solid var(--border); margin: 18px 0; }
 
 h2.cv-section {
