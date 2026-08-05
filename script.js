@@ -43,3 +43,44 @@ if (themeToggle) {
 // Año en el footer
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Contacto ofuscado: el email/teléfono no existen como texto plano en el
+// HTML ni aquí arriba en el .js — se reconstruyen recién al cargar la
+// página, para no quedar expuestos a scrapers de spam masivo.
+const deobfuscate = (s) => s.split("").reverse().join("");
+
+const EMAIL_R = "moc.liamg@459evaph";
+const TEL_HREF_R = "007952146625+";
+const TEL_DISPLAY_R = "0079 521 466";
+
+function populateContactInfo() {
+  const email = deobfuscate(EMAIL_R);
+  const telHref = deobfuscate(TEL_HREF_R);
+  const telDisplay = deobfuscate(TEL_DISPLAY_R);
+
+  const heroEmail = document.getElementById("hero-email");
+  if (heroEmail) heroEmail.textContent = email;
+
+  const emailLink = document.getElementById("email-contact-link");
+  if (emailLink) {
+    emailLink.href = `mailto:${email}`;
+    emailLink.textContent = `📧 ${email}`;
+  }
+
+  const phoneLink = document.getElementById("phone-contact-link");
+  if (phoneLink) {
+    phoneLink.href = `tel:${telHref}`;
+    phoneLink.textContent = `📱 ${telDisplay}`;
+  }
+
+  const cvPhone = document.getElementById("cv-phone");
+  if (cvPhone) cvPhone.textContent = telDisplay;
+
+  const cvEmailLink = document.getElementById("cv-email-link");
+  if (cvEmailLink) {
+    cvEmailLink.href = `mailto:${email}`;
+    cvEmailLink.textContent = email;
+  }
+}
+
+populateContactInfo();
