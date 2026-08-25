@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-delta-ruddy-33.vercel.app/sitemap.xml
+Sitemap: https://hectorparamo.dev/sitemap.xml

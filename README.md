@@ -1,23 +1,13 @@
 # Portafolio — Héctor Páramo Velásquez
 
+🔗 **[hectorparamo.dev](https://hectorparamo.dev)**
+
 Sitio estático (HTML/CSS/JS puro, sin frameworks ni build step) con dos páginas, cada una disponible en español (raíz) e inglés (`en/`):
 
 - `index.html` / `en/index.html` — portafolio de evidencia (sobre mí, stack, proyectos). Diseño "Blueprint": tipografía Archivo Black + IBM Plex Mono (self-hosted en `fonts/`, sin peticiones a CDNs externos), tema navy oscuro / crema claro, sin bordes redondeados.
 - `cv.html` / `en/cv.html` — CV imprimible/descargable a PDF (botón "Imprimir" usa el diálogo de impresión del navegador → "Guardar como PDF"). Mantiene su estilo propio, distinto del sitio — tiene el historial completo de experiencia y educación que ya no está duplicado en `index.html`.
 
 **⚠️ Mantenimiento bilingüe:** no hay build step ni una sola fuente de verdad por texto — español e inglés son archivos HTML separados y completos. Cualquier edición de contenido (arreglar un typo, actualizar el stack, agregar un proyecto) hay que replicarla a mano en ambos árboles (`index.html`↔`en/index.html`, `cv.html`↔`en/cv.html`, `404.html`↔`en/404.html`), o las dos versiones se desincronizan silenciosamente. Los 2 diagramas de arquitectura (G-Nex, Velody) también están duplicados por idioma (4 SVGs en total) — si la arquitectura real cambia, hay que actualizar las 4 copias.
-
-## Pendientes antes de publicar
-
-- [x] Reemplazar el link `href="#"` de GitHub en `index.html` (footer) y en `cv.html` (encabezado) — ahora apunta a `https://github.com/Hector0122`.
-- [ ] Reemplazar el link `href="#"` de LinkedIn en `index.html` (footer) y en `cv.html` (encabezado) con tu URL real.
-- [ ] Confirmar que el teléfono (664 125 9700, solo visible en `cv.html`) y la ubicación (Tijuana, México) siguen siendo correctos.
-- [ ] Reemplazar los 7 logos placeholder (`logo_gnex.svg`, `logo_varo.svg`, `logo_vaulta.svg`, `logo_velody.svg`, `logo_vellum.svg`, `logo_viva2026.svg`, `logo_veya.svg`) por los logos reales cuando los tengas — es un swap de archivo, no hace falta tocar el HTML.
-- [ ] Revisar si G-Nex/Anexo 24 y el proyecto de SITT tienen información confidencial de cliente antes de publicar el sitio públicamente (ninguno de los dos nombra al cliente/empleador, pero confírmalo).
-- [ ] Poner nombre final al proyecto de Unity si ya lo tienes (actualmente aparece como "Viva2026").
-- [ ] Si cambias a un dominio propio, actualizar la URL de producción hardcodeada en `robots.txt`, `sitemap.xml`, y en las meta tags `og:url`/`og:image`/`twitter:image`/`canonical` de `index.html` (actualmente todas apuntan a `https://portfolio-delta-ruddy-33.vercel.app/`).
-- [ ] `og-image.svg` es un placeholder generado por IA con tu nombre/stack; reemplázalo por una captura o foto real cuando quieras (X/Twitter no rasteriza bien SVG en `og:image`, considera exportarlo a PNG si te importa esa plataforma).
-- [ ] Si algún día quieres actualizar los diagramas de arquitectura de G-Nex/Velody en `index.html` (los `<svg>` dentro de cada `<details>`), recuerda que son dibujados a mano — si la arquitectura real cambia, el diagrama no se actualiza solo.
 
 ## Cómo verlo localmente
 
@@ -67,6 +57,3 @@ Portafolio-Hector/
 ├── vercel.json          Headers de seguridad (CSP, X-Frame-Options, etc.) + rewrite de 404 para /en/
 └── README.md            Este archivo
 ```
-
-// levantar el servidor local 
- npx serve .
