@@ -12,7 +12,7 @@ Sitio estático (HTML/CSS/JS puro, sin frameworks ni build step) con dos página
 - [x] Reemplazar el link `href="#"` de GitHub en `index.html` (footer) y en `cv.html` (encabezado) — ahora apunta a `https://github.com/Hector0122`.
 - [ ] Reemplazar el link `href="#"` de LinkedIn en `index.html` (footer) y en `cv.html` (encabezado) con tu URL real.
 - [ ] Confirmar que el teléfono (664 125 9700, solo visible en `cv.html`) y la ubicación (Tijuana, México) siguen siendo correctos.
-- [ ] Reemplazar los 6 logos placeholder (`logo_gnex.svg`, `logo_varo.svg`, `logo_vaulta.svg`, `logo_velody.svg`, `logo_vellum.svg`, `logo_viva2026.svg`) por los logos reales cuando los tengas — es un swap de archivo, no hace falta tocar el HTML.
+- [ ] Reemplazar los 7 logos placeholder (`logo_gnex.svg`, `logo_varo.svg`, `logo_vaulta.svg`, `logo_velody.svg`, `logo_vellum.svg`, `logo_viva2026.svg`, `logo_veya.svg`) por los logos reales cuando los tengas — es un swap de archivo, no hace falta tocar el HTML.
 - [ ] Revisar si G-Nex/Anexo 24 y el proyecto de SITT tienen información confidencial de cliente antes de publicar el sitio públicamente (ninguno de los dos nombra al cliente/empleador, pero confírmalo).
 - [ ] Poner nombre final al proyecto de Unity si ya lo tienes (actualmente aparece como "Viva2026").
 - [ ] Si cambias a un dominio propio, actualizar la URL de producción hardcodeada en `robots.txt`, `sitemap.xml`, y en las meta tags `og:url`/`og:image`/`twitter:image`/`canonical` de `index.html` (actualmente todas apuntan a `https://portfolio-delta-ruddy-33.vercel.app/`).
@@ -67,3 +67,6 @@ Portafolio-Hector/
 ├── vercel.json          Headers de seguridad (CSP, X-Frame-Options, etc.) + rewrite de 404 para /en/
 └── README.md            Este archivo
 ```
+
+// levantar el servidor local 
+ npx serve .
