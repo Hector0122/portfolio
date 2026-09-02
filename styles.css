@@ -648,4 +648,10 @@ figcaption {
   .title-block { grid-template-columns: 1fr 1fr; }
 
   .site-footer__inner { flex-direction: column; align-items: flex-start; }
+
+  /* .proj-grid's auto-fit minmax(240px,1fr) is ambiguous around 480-640px —
+     depending on the exact viewport it can squeeze in a cramped 2nd column
+     or leave a lone card stranded on its own row. Forcing 1 column below
+     720px removes that guesswork on phones. */
+  .proj-grid { grid-template-columns: 1fr; }
 }
